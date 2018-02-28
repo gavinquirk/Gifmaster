@@ -1,9 +1,9 @@
 
-/* #intro {
-    
-} */
-
 hr {
     border-width: 1px;
     border-color: white;
+}
+
+#gifContainer {
+    min-height: 350px;
 }
