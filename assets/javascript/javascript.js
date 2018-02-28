@@ -40,7 +40,7 @@ $(document).ready(function () {
         var apiKey = "MNhVzIgPRGBpvrTp4NUiu6Qy6AziD64G"
         var limit = 20
         var query = $(this).attr("data-query")
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=" + limit + ""
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=" + limit + ""
 
         // AJAX request
         $.ajax({
