@@ -3,19 +3,11 @@
 
 var queryArr = ["cat", "dog", "panda"]
 
-
 createBtns()
 
 
 
-// Submit Button Click
-$("#subBtn").on("click", function () {
-    var searchTerm = $("#search").val()
-    console.log("Submit Pressed")
-    queryArr.splice(0, 0, searchTerm)
-    eraseBtns()
-    createBtns()
-})
+
 
 // Function: create buttons based on query array
 function createBtns() {
@@ -35,33 +27,71 @@ function eraseGifs() {
     $("#gifContainer").empty()
 }
 
+// Submit Button Click
+$("#subBtn").on("click", function (event) {
+    event.preventDefault()
+    var searchTerm = $("#search").val()
+    console.log("Submit Pressed")
+    queryArr.splice(0, 0, searchTerm)
+    eraseBtns()
+    createBtns()
+})
 
 
 // On query button click
 $(".queryBtn").on("click", function (event) {
     event.preventDefault()
-    console.log(queryArr)
     eraseGifs()
+
+
     var apiKey = "MNhVzIgPRGBpvrTp4NUiu6Qy6AziD64G"
     var limit = 15
-    query = $(this).attr("data-query")
+    var query = $(this).attr("data-query")
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=" + limit + ""
 
-    // AJAX
+    console.log("query: " + query)
+
+    // AJAX request
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+        console.log(response.data[0].images)
+
+
 
 
         
-        // Create Gifs
+        // Create Giphs
         for (r = 0; r < 10; r++) {
-            var img = $("<img src='" + response.data[r].images.fixed_height.url + "' class='border m-1'>")
+
+            var img = $("<img src='" + response.data[r].images.fixed_height_still.url + "' class='gif border m-1'>")
+            $(img).attr("data-still", response.data[r].images.fixed_height_still.url)
+            $(img).attr("data-animate", response.data[r].images.fixed_height.url)
+            $(img).attr("data-state", "still")
             $("#gifContainer").append(img)
+
         }
+
+        // Gif On Click 
+        $(".gif").on("click", function () {
+            console.log("click")
+            var state = $(this).attr("data-state")
+            var dataStill = $(this).attr('data-still')
+            var dataAnimate = $(this).attr('data-animate')
+
+            if (state === 'still') {
+                $(this).attr('src', dataAnimate)
+                $(this).attr('data-state', 'animate')
+            }
+            else if (state === 'animate') {
+                $(this).attr('src', dataStill)
+                $(this).attr('data-state', 'still')
+            }
+        })
     })
 
 
 
 })
+
