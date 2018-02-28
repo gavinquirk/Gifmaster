@@ -38,7 +38,7 @@ $(document).ready(function () {
         eraseGifs()
 
         var apiKey = "MNhVzIgPRGBpvrTp4NUiu6Qy6AziD64G"
-        var limit = 20
+        var limit = 10
         var query = $(this).attr("data-query")
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=" + apiKey + "&limit=" + limit + ""
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             // Render Giphs
-            for (r = 0; r < 20; r++) {
+            for (r = 0; r < 10; r++) {
                 var rating = response.data[r].rating
                 var imgCont = $("<div class='imgCont'>")
                 var img = $("<img src='" + response.data[r].images.fixed_height_still.url + "' class='gif border m-1'>")
