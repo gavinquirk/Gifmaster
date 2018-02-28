@@ -47,14 +47,15 @@ $(document).ready(function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-
             // Render Giphs
             for (r = 0; r < 20; r++) {
-
+                var rating = response.data[r].rating
+                var imgCont = $("<div class='imgCont'>")
                 var img = $("<img src='" + response.data[r].images.fixed_height_still.url + "' class='gif border m-1'>")
                 $(img).attr("data-still", response.data[r].images.fixed_height_still.url)
                 $(img).attr("data-animate", response.data[r].images.fixed_height.url)
                 $(img).attr("data-state", "still")
+                $(img).attr("title", "Rating: " + rating)
                 $("#gifContainer").append(img)
 
             }
