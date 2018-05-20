@@ -6,4 +6,4 @@ Gifmaster is deployed to github, and can be accessed by visiting https://gavinqu
 
 ![alt text](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-_Kdj4WHMgJs%2FT-x55RBodaI%2FAAAAAAAACT0%2Fq6NMyeSeQ7A%2Fs1600%2F01%252BBob-Ross.jpg&f=1)
 
-<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-_Kdj4WHMgJs%2FT-x55RBodaI%2FAAAAAAAACT0%2Fq6NMyeSeQ7A%2Fs1600%2F01%252BBob-Ross.jpg&f=1" alt="Drawing" style="width: 200px;"/>
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-_Kdj4WHMgJs%2FT-x55RBodaI%2FAAAAAAAACT0%2Fq6NMyeSeQ7A%2Fs1600%2F01%252BBob-Ross.jpg&f=1" alt="Drawing" style="width: 50px;"/>
