@@ -4,14 +4,15 @@ The Gifmaster application searches for gifs using the Giphy API. The user can cl
 
 Gifmaster is deployed to github, and can be accessed by visiting https://gavinquirk.github.io/Gifmaster/
 <hr>
-Click on a term button to search for related gifs
+Click on a term button to search for related gifs:
 <br>
 <img src='./assets/images/readme-images/term-buttons.png'>
 <hr>
-Add a new search term by entering one into the form and pressing submit
+Add a new search term by entering one into the form and pressing submit:
 <img src='./assets/images/readme-images/new-term-entry.png'>
 <hr>
-After clicking a term button, gifs will populate into the box below.
+After clicking a term button, gifs will populate into the box below:
 <img src='./assets/images/readme-images/gif-population.png'>
 <hr>
+<br>
 Click on a gif to start and stop animation. Hover over a gif to see its rating.
