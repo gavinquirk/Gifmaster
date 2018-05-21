@@ -8,7 +8,7 @@ Click on a term button to search for related gifs:
 <br>
 <img src='./assets/images/readme-images/term-buttons.png'>
 <hr>
-Add a new search term by entering one into the form and pressing submit:
+Add a new search term by entering one into the form and pressing Add Term:
 <img src='./assets/images/readme-images/new-term-entry.png'>
 <hr>
 After clicking a term button, gifs will populate into the box below:
