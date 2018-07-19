@@ -18,6 +18,7 @@ hr {
 #gifContainer {
     min-height: 350px;
     background-color: white;
+    margin-top: 0;
 }
 
 .queryBtn {
@@ -31,6 +32,7 @@ hr {
 #btnCon {
     padding-top: 2%;
     padding-bottom: 2%;
+    text-align: center;
 }
 
 #logo {
@@ -41,4 +43,17 @@ hr {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.gifContainerHeader {
+    background-color: #2068a8;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.gifContainerHeader h4 {
+    margin: 0;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     var queryArr = ["cat", "dog", "panda"]
 
     createBtns()
