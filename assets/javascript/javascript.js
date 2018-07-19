@@ -7,7 +7,7 @@ $(document).ready(function () {
     // Function: create buttons based on query array
     function createBtns() {
         for (i = 0; i < queryArr.length; i++) {
-            var newBtn = $("<button type='button' class='queryBtn m-2' data-query=" + queryArr[i] + ">" + queryArr[i] + "</button>")
+            var newBtn = $("<button type='button' class='queryBtn m-2 btn-md btn' data-query=" + queryArr[i] + ">" + queryArr[i] + "</button>")
             $("#btnCon").append(newBtn)
         }
     }
